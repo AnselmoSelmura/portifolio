@@ -23,16 +23,44 @@ ativaMenu.addEventListener('click', ()=>{
 //ESSE SCRIPT TRAZ O RESUMO
 const divExperienc = document.querySelectorAll('.esperiencia-content .feito');
 const listExperienc = document.querySelectorAll('.esperiencia-content .list-span li')
+divExperienc[0].classList.add('ativo')
+listExperienc[0].classList.add('ativo')
 
 const divEducation = document.querySelectorAll('.educacao-content .feito');
 const listEducation = document.querySelectorAll('.educacao-content .list-span li')
+divEducation[0].classList.add('ativo')
+listEducation[0].classList.add('ativo')
 
 function slidShow(index) {
     divExperienc.forEach((feito) =>{
         feito.classList.remove('ativo')
     });
-    divEducation.forEach((botao) =>{
+    listExperienc.forEach((botao) =>{
         botao.classList.remove('ativo')
     });
     divExperienc[index].classList.add('ativo')
+    listExperienc[index].classList.add('ativo')
 }
+
+function slidShow2(index) {
+    divEducation.forEach((feito) =>{
+        feito.classList.remove('ativo')
+    });
+    listEducation.forEach((botao) =>{
+        botao.classList.remove('ativo')
+    });
+    divEducation[index].classList.add('ativo')
+    listEducation[index].classList.add('ativo')
+}
+
+listExperienc.forEach((event,index) =>{
+    event.addEventListener('click', () =>{
+        slidShow(index)
+    });
+});
+
+listExperienc.forEach((event,index) =>{
+    event.addEventListener('click', () =>{
+        slidShow2(index)
+    });
+});
