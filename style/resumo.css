@@ -1,0 +1,73 @@
+.meu-resumo{
+    animation: inicializar .7s forwards;
+    background-color: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px
+}.meu-resumo{
+    color: #fff;
+}
+.resumo-generico{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: start;
+
+}.resumo-generico h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    background-color: #12ec0b;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 5px;
+}.resumo-generico h2 i{
+    margin-right: 10px;
+}
+.esperiencia{
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.educacao{
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.list-span{
+    width: 500px;
+    color: #12ec0b;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center; 
+}
+.feito{
+    background-color: #232;
+    padding: 40px;
+    position: relative;
+}
+.feito::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #232;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    display: inline-flex;
+}.feito span{
+    color: #12ec0b;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}.feito h3{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+}.feito p{
+    color:#607060;
+    font-size: 1.2rem;
+}
